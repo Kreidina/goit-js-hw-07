@@ -19,15 +19,12 @@ galleryEl.innerHTML = marcup;
 
 galleryEl.addEventListener('click', onClick);
 
-let imgEl;
 
 function onClick(evt){
     evt.preventDefault();
     if(evt.target.nodeName !== 'IMG'){
         return;
     }
-    imgEl = evt.target;
-    gallery.show();
 }
 
 let gallery = new SimpleLightbox('.gallery a', {
